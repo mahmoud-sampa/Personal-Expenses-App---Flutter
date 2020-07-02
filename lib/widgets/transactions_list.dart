@@ -6,20 +6,7 @@ import 'package:intl/intl.dart';
 
 
 
-class TransactionsList extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return TransactionsListState();
-  }
-}
-
-class TransactionsListState extends State<TransactionsList> {
-  final List<Transaction> transactions = [
-    Transaction(id: "t1",title: "Shopping",amount: 100.0,date: DateTime.now()),
-    Transaction(id: "t2",title: "Learning",amount: 500.0,date: DateTime.now()),
-    Transaction(id: "t3",title: "Phone",amount: 250.0,date: DateTime.now()),
-  ];
-
+class TransactionsList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
